@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Youtube Live Viewer</title>
+<style type="text/css">
+body {
+  width: 1710px;
+  margin: 0 auto;
+}
+header {
+  margin: 10px 0;
+}
+.video {
+  float: left;
+}
+.chat {
+  float: left;
+}
+</style>
+</head>
+<body id="header">
+<header>
+<input type="text" id="input_url" size="50">
+<button id="btn_open">OPEN</button>
+<button id="btn_clear">CLEAR</button>
+</header>
+<div class="video">
+  <iframe id="iVideo" width="1280" height="720" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<div class="chat">
+  <iframe id="iChat" src="" width="420" height="720"></iframe>
+</div>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
