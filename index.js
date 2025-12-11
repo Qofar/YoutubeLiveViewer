@@ -5,7 +5,7 @@ const open = function(){
 	const matches = url.match(regex);
 
 	if(matches[5]) {
-		const videoUrl = "https://www.youtube.com/embed/" + matches[5];
+		const videoUrl = "https://www.youtube.com/embed/" + matches[5] + "&autoplay=1";
 		const chatUrl  = "https://www.youtube.com/live_chat?is_popout=1&v=" + matches[5];
 
 		document.getElementById("iVideo").src = videoUrl;
@@ -19,3 +19,4 @@ const clear = function(){
 document.getElementById("btn_open").onclick  = open;
 document.getElementById("btn_clear").onclick = clear;
 document.getElementById("input_url").focus();
+
