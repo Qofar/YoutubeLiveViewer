@@ -5,7 +5,7 @@ const open = function(){
 	const matches = url.match(regex);
 
 	if(matches[5]) {
-		const videoUrl = "https://www.youtube.com/embed/" + matches[5];
+		const videoUrl = "https://www.youtube.com/embed/" + matches[5] + "?autoplay=1";
 		const chatUrl  = "https://www.youtube.com/live_chat?v=" + matches[5] + "&embed_domain=qofar.github.io";
 
 		document.getElementById("iVideo").src = videoUrl;
